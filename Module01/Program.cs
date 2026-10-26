@@ -24,20 +24,17 @@ Console.WriteLine($"Hello this is {name}, I'm {age} years old. I'm from {city}")
 int a = 10;
 int b = 3;
 
-
 Console.WriteLine(a + b);
 Console.WriteLine(a - b);
 Console.WriteLine(a * b);
 Console.WriteLine(a / b);
 Console.WriteLine(a % b);
 
-
 // Medium
-// Exercise 3 
+// Exercise 3
 int x = 7;
 int y = 2;
 Console.WriteLine($"{x / (double)y}");
-
 
 // Exercise 4
 double d_num_1 = 0.1;
@@ -48,9 +45,9 @@ decimal dc_num_2 = 0.2m;
 
 // Here it print the number as "0.30000000000000004" which is the number with all the decimal places
 Console.WriteLine(d_num_1 + d_num_2);
-//  Here it printed the number with one decimal place
-Console.WriteLine( dc_num_1 + dc_num_2);
 
+//  Here it printed the number with one decimal place
+Console.WriteLine(dc_num_1 + dc_num_2);
 
 // Exercise 5
 decimal price = 99.99m;
@@ -59,11 +56,9 @@ decimal subTotal = price * quantity;
 decimal tax = subTotal * .14m;
 decimal total = subTotal + tax;
 
-
-Console.WriteLine( $"Before Tax: {subTotal:F2}");
-Console.WriteLine( $"After Tax: {total:F2}");
+Console.WriteLine($"Before Tax: {subTotal:F2}");
+Console.WriteLine($"After Tax: {total:F2}");
 Console.WriteLine($"Tax (14%): {tax:F2}");
-
 
 // Mini-task
 // var is able to auto set the variable type one time so it's ok to use it here because it would know that it's string by itself.

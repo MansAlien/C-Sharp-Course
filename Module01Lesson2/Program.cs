@@ -16,7 +16,6 @@
 // Console.WriteLine((int)price);          // 9
 // Console.WriteLine(Math.Round(price));   // 10
 
-
 // Exercise 1
 // Console.WriteLine(10 / 4); -> 2
 // Console.WriteLine(10 % 4); -> 2
