@@ -76,31 +76,51 @@
 // }
 //
 
-Console.Write("Enter grade: ");
-string? gradeText = Console.ReadLine()?.Trim();
-if (int.TryParse(gradeText, out int grade) && grade <= 100 && grade >= 0)
+// Console.Write("Enter grade: ");
+// string? gradeText = Console.ReadLine()?.Trim();
+// if (int.TryParse(gradeText, out int grade) && grade <= 100 && grade >= 0)
+// {
+//     switch (grade / 10)
+//     {
+//         case 10:
+//         case 9:
+//             Console.WriteLine("A");
+//             break;
+//         case 8:
+//             Console.WriteLine("B");
+//             break;
+//         case 7:
+//             Console.WriteLine("C");
+//             break;
+//         case 6:
+//             Console.WriteLine("D");
+//             break;
+//         default:
+//             Console.WriteLine("F");
+//             break;
+//     }
+// }
+// else
+// {
+//     Console.WriteLine("Invalid input: enter a whole number from 0 to 100");
+// }
+
+// Challenge 
+
+Console.Write("Enter Year: ");
+string? yearText = Console.ReadLine()?.Trim();
+if (int.TryParse(yearText, out int year) && year > 0 )
 {
-    switch (grade / 10)
+    if( (year % 400 == 0) || (year % 4 == 0 && year % 100 != 0) )
     {
-        case 10:
-        case 9:
-            Console.WriteLine("A");
-            break;
-        case 8:
-            Console.WriteLine("B");
-            break;
-        case 7:
-            Console.WriteLine("C");
-            break;
-        case 6:
-            Console.WriteLine("D");
-            break;
-        default:
-            Console.WriteLine("F");
-            break;
+        Console.WriteLine("Leap year");
+    }
+    else
+    {
+        Console.WriteLine("Not a leap year");
     }
 }
 else
 {
-    Console.WriteLine("Invalid input: enter a whole number from 0 to 100");
+    Console.WriteLine("Invalid input: enter a whole number at least 1");
 }
