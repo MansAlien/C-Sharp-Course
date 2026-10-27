@@ -4,4 +4,6 @@
   <Project Path="Module01/Module01.csproj" />
   <Project Path="Module01Lesson2/Module01Lesson2.csproj" />
   <Project Path="Module01Lesson3/Module01Lesson3.csproj" />
+  <Project Path="Module01Lesson4/Module01Lesson4.csproj" />
+  <Project Path="TicketCalculator/TicketCalculator.csproj" />
 </Solution>
