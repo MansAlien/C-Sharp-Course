@@ -1,0 +1,124 @@
+﻿// int n = 10;
+//
+// while (n < 5)
+// {
+//     Console.WriteLine("Hello");
+//     n++;
+// }
+//
+// Console.WriteLine("Done");
+//
+
+// string? numberText;
+// int number = 1;
+// do 
+// {
+//
+//     if (number <= 0)
+//     {
+//         Console.WriteLine("Invalid input: Enter a positive number");
+//     }
+//     Console.Write("Enter a positive number: ");
+//     numberText = Console.ReadLine();
+// }
+// while (!int.TryParse(numberText, out number) || number <= 0);
+//
+// Console.WriteLine($"You entered: {number}");
+
+// while (true)
+// {
+//     Console.Write("Enter a positive number: ");
+//     string? numberText = Console.ReadLine();
+//
+//     if (numberText == null)
+//     {
+//         Console.WriteLine("Input closed");
+//         break;
+//     }
+//     if (!int.TryParse(numberText, out int number) || number <= 0)
+//     {
+//         Console.WriteLine("Invalid input: Enter a positive whole number");
+//         continue;
+//     }
+//     Console.WriteLine($"You entered: {number}");
+//     break;
+// }
+
+
+// Console.Write("Enter a whole number: ");
+// string? numberText = Console.ReadLine();
+//
+// if (int.TryParse(numberText, out int number))
+// {
+//     for (int i = 1; i < 11; i++)
+//     {
+//         Console.WriteLine($" {number} x {i} = {number * i}");
+//     }
+// }
+// else
+// {
+//     Console.WriteLine("Invalid input: Enter a whole number");
+// }
+//
+
+
+// Console.Write("Enter a positive whole number: ");
+// string? numberText = Console.ReadLine();
+//
+// if (int.TryParse(numberText, out int number) && number > 0)
+// {
+//     for (int i = 1; i <= number; i++)
+//     {
+//         if (i % 15 == 0)
+//         {
+//             Console.WriteLine("FizzBuzz");
+//         }
+//         else if (i % 5 == 0)
+//         {
+//             Console.WriteLine("Buzz");
+//         }
+//         else if (i % 3 == 0)
+//         {
+//             Console.WriteLine("Fizz");
+//         }
+//         else
+//         {
+//             Console.WriteLine(i);
+//         }
+//     }
+// }
+// else
+// {
+//     Console.WriteLine("Invalid input: Enter a positive whole number");
+// }
+//
+
+// string text = "hello";
+// int count = 0;
+//
+// foreach (char c in text)
+// {
+//     if (c == 'l')
+//     {
+//         count++;
+//     }
+// }
+//
+// Console.WriteLine(count);
+
+
+while (true)
+{
+    Console.Write("Enter a word (or \"quit\" to stop):");
+    string? word = Console.ReadLine()?.ToLower();
+
+    if (word == null)
+    {
+        Console.WriteLine("Input close");
+        break;
+    }
+    if (word == "" || word == " ")
+    {
+        Console.WriteLine("Invalid input: input empty or spaces are not allowed");
+    }
+}
